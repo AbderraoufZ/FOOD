@@ -1,0 +1,56 @@
+:root {
+  --PrimaryColor: rgb(10, 35, 25);
+  --whiteColor: rgb(233, 238, 236);
+  --textColor: rgb(205, 205, 205);
+}
+
+.home {
+  position: relative;
+  background: #11c67e;
+  opacity: .7;
+  width: 100%;
+  height: 94vh;
+}
+
+.home .overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: var(--PrimaryColor);
+  opacity: 0.7;
+  z-index: 1;
+}
+
+.home video {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.home .container {
+  position: relative;
+  width: 80%;
+  height: 100%;
+  z-index: 100;
+}
+
+.home .container .homeContent {
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  color: var(--textColor);
+}
+
+.home .container .homeContent h1 {
+  font-size: 40px;
+}
+
+.home .container .homeContent h3 {
+  font-size: 20px;
+}
+/*# sourceMappingURL=home.css.map */

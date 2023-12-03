@@ -1,0 +1,123 @@
+:root {
+  --PrimaryColor: rgb(10, 35, 25);
+  --whiteColor: rgb(233, 238, 236);
+  --textColor: rgb(205, 205, 205);
+}
+
+.menu {
+  position: relative;
+  width: 100%;
+}
+
+.menu .container {
+  width: 80%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 4rem 0;
+  gap: 1rem;
+}
+
+.menu .title {
+  font-size: 20px;
+}
+
+.menu .filter {
+  gap: .5rem;
+}
+
+.menu .filter .btn {
+  padding: .3rem .7rem;
+  margin-bottom: 25px;
+  border-radius: 3rem;
+  cursor: pointer;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.menu .filter .btn:hover {
+  background-color: var(--PrimaryColor);
+  color: var(--textColor);
+}
+
+.menu .filter .active {
+  background-color: var(--PrimaryColor);
+  color: var(--textColor);
+}
+
+.menu .cards {
+  padding: 1rem;
+  position: relative;
+  row-gap: 2rem;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-columns: 90%;
+      grid-template-columns: 90%;
+}
+
+.menu .cards .card {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  background: rgba(98, 98, 98, 0.03);
+  border-radius: 2rem;
+  -webkit-box-shadow: 4px 4px 5px rgba(10, 35, 25, 0.05);
+          box-shadow: 4px 4px 5px rgba(10, 35, 25, 0.05);
+  cursor: pointer;
+}
+
+.menu .cards .card .image {
+  overflow: hidden;
+  width: 100%;
+  height: 60%;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.menu .cards .card .image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.menu .cards .card .infoCard {
+  padding: .7rem 1rem;
+}
+
+.menu .cards .card .infoCard .title {
+  margin: 10px;
+}
+
+.menu .cards .card .infoCard p {
+  font-size: 13px;
+}
+
+.menu .cards .card:hover .image {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width: 720px) {
+  .menu .container .cards {
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+    gap: 2rem;
+  }
+}
+
+@media screen and (min-width: 1224px) {
+  .menu .container .cards {
+    -ms-grid-columns: 33% 33% 33%;
+        grid-template-columns: 33% 33% 33%;
+    gap: 2rem;
+  }
+}
+/*# sourceMappingURL=menu.css.map */

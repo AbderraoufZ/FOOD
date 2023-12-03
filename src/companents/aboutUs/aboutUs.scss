@@ -1,0 +1,56 @@
+:root{
+    --PrimaryColor: rgb(10, 35, 25);
+    --whiteColor: rgb(233, 238, 236);
+    --textColor: rgb(205, 205, 205);
+}
+
+.aboutUs{
+    width: 100%;
+    background: rgb(0, 106, 64);
+    .container{
+        width: 80%;
+        padding: 4rem 0;
+        flex-direction: column;
+        gap: 2rem;
+        .imageFOOD{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: #000000;
+            box-shadow: 5px 5px 15px rgba(10, 35, 25, 0.5);
+            img{
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+            }
+        }
+        .information{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .title{
+                color: var(--textColor);
+                font-size: 25px;
+                font-weight: 600;
+                margin-bottom: 1rem;
+            }
+            .description{
+                color: var(--textColor);
+                font-size: 15px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 940px){
+    .aboutUs{
+        .container{
+            .information{
+                width: 60%;
+            }
+        }
+    }
+}

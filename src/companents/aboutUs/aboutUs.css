@@ -1,0 +1,71 @@
+:root {
+  --PrimaryColor: rgb(10, 35, 25);
+  --whiteColor: rgb(233, 238, 236);
+  --textColor: rgb(205, 205, 205);
+}
+
+.aboutUs {
+  width: 100%;
+  background: #006a40;
+}
+
+.aboutUs .container {
+  width: 80%;
+  padding: 4rem 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+
+.aboutUs .container .imageFOOD {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: #000000;
+  -webkit-box-shadow: 5px 5px 15px rgba(10, 35, 25, 0.5);
+          box-shadow: 5px 5px 15px rgba(10, 35, 25, 0.5);
+}
+
+.aboutUs .container .imageFOOD img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.aboutUs .container .information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.aboutUs .container .information .title {
+  color: var(--textColor);
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.aboutUs .container .information .description {
+  color: var(--textColor);
+  font-size: 15px;
+  text-align: center;
+}
+
+@media screen and (min-width: 940px) {
+  .aboutUs .container .information {
+    width: 60%;
+  }
+}
+/*# sourceMappingURL=aboutUs.css.map */

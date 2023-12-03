@@ -1,0 +1,38 @@
+:root{
+    --PrimaryColor: rgb(10, 35, 25);
+    --whiteColor: rgb(233, 238, 236);
+    --textColor: rgb(205, 205, 205);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: var(--bodyColor);
+}
+
+html{
+    scroll-behavior:smooth ;
+}
+
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.grid{
+    display: grid;
+    align-items: center;
+}
+.icon{
+    width: 25px;
+}

@@ -1,0 +1,113 @@
+:root{
+    --PrimaryColor: rgb(10, 35, 25);
+    --whiteColor: rgb(233, 238, 236);
+    --textColor: rgb(205, 205, 205);
+}
+
+.footer{
+    flex-direction: column;
+    background: var(--PrimaryColor);
+    width: 100%;
+    .container{
+        width: 80%;
+        flex-direction: column;
+        padding: 4rem 0;
+        .title{
+            color: var(--textColor);
+            font-size: 25px;
+            width: 500;
+            margin-bottom: 1rem;
+        }
+        .form{
+            width: 80%;
+            padding: 1rem;
+            form{
+                width: 100%;
+                .email{
+                    
+                    margin-bottom: 1rem;
+                    display: flex;
+                    color: var(--PrimaryColor);
+                    background: var(--whiteColor);
+                    padding: .5rem;
+                    border-radius: 2rem;
+                    gap: .3rem;
+                    label{
+                        width: 100px;
+                        font-size: 15px;
+                    }
+                    input{
+                        outline: none;
+                        background: none;
+                        border: none;
+                        width: 100%;
+                        padding: .2rem;
+                    }
+                }
+                .message{
+                    width: 100%;
+                    gap: .3rem;
+                    display: flex;
+                    padding: .5rem;
+                    margin-bottom: 1rem;
+                    border-radius: 1rem;
+                    background: var(--whiteColor);
+                    label{
+                        font-size: 15px;
+                        width: 100px;
+                    }
+                    textarea{
+                        outline: none;
+                        padding: .2rem;
+                        width: 100%;
+                        background: none;
+                        border: none;
+                        box-shadow: none;
+                    }
+                }
+                .btn{
+                    width: 100%;
+                    padding: .5rem 0;
+                    border-radius: 3rem;
+                    background-color: rgb(0, 106, 64);
+                    color: var(--textColor);
+                    border: none;
+                    transition: .3s ease-in-out;
+                    &:hover{
+                        background: var(--whiteColor);
+                        color: var(--PrimaryColor);
+                    }
+                }
+
+            }
+        }
+
+        .links{
+
+            justify-content: space-between;
+            width: 100%;
+            margin-top: 2rem;
+            .network, .delivery{
+                display: flex;
+                gap: 1rem;
+                a{
+                    cursor: pointer;
+                    color: var(--whiteColor);
+                    .icon{
+                        font-size: 20px;
+                        
+                    }
+                }
+            }
+            
+        }
+    }
+    .copyright{
+        width: 100%;
+        padding: .7rem 0;
+        flex-direction: column;
+        color: var(--whiteColor);
+        font-size: 12px;
+        gap: .3rem;
+    }
+}
